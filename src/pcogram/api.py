@@ -45,10 +45,10 @@ class PcogramAPI(object):
                              message=message)
 
     def posts_by_me(self):
-        return self.api_call('post', '/posts_by_me')
+        return self.api_call('get', '/posts_by_me')
 
     def posts_by_user(self, username: str):
-        return self.api_call('post', '/posts_by_user',
+        return self.api_call('get', '/posts_by_user',
                              username=username)
 
     def follow(self, username: str):
@@ -60,10 +60,10 @@ class PcogramAPI(object):
                              username=username)
 
     def followers(self):
-        return self.api_call('post', '/followers')
+        return self.api_call('get', '/followers')
 
     def following(self):
-        return self.api_call('post', '/following')
+        return self.api_call('get', '/following')
 
     def timeline(self):
-        return self.api_call('post', '/timeline')
+        return self.api_call('get', '/timeline')
