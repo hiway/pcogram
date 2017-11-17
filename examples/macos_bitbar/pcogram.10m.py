@@ -7,6 +7,9 @@
 # <bitbar.desc>Access your Pcogram account.</bitbar.desc>
 # <bitbar.dependencies>pcogram,python3.6</bitbar.dependencies>
 
+# IMPORTANT: Replace `python3` in the top line
+# with output from `which python` inside your virtualenv
+# (where you have run `pip install pcogram` and `pcogram login` before).
 
 from pcogram.api import PcogramAPI
 from pcogram.cli import load_token
