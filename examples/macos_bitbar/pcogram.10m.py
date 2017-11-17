@@ -1,4 +1,4 @@
-#!/usr/bin/env PYTHONIOENCODING=UTF-8 /Users/harshad/.virtualenvs/pcogram_server-P34bbgy0/bin/python
+#!/usr/bin/env PYTHONIOENCODING=UTF-8 python3
 # coding: utf-8
 # <bitbar.title>Pcogram</bitbar.title>
 # <bitbar.version>v0.1</bitbar.version>
