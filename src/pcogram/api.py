@@ -19,7 +19,7 @@ class PcogramAPI(object):
         headers = headers or {}
         method_handler = getattr(requests, method.lower())
         if self.token:
-            headers.update({'Authorization': f'Bearer {self.token}'})
+            headers.update({'Authorization': 'Bearer {}'.format(self.token)})
         r = method_handler(self.get_url(path), json=data, headers=headers)
         return r.json()
 
