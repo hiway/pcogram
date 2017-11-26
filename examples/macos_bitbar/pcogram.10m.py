@@ -28,14 +28,17 @@ try:
             me = tl
         else:
             others.append(tl)
-    print(''.join(me['posts'][:5]))
+    print('  '.join(me['posts'][:5]))
     print('---')
-    print('post| href={}'.format('https://pcogram.com/post'))
+    print('post on pcogram| href={}'.format('https://pcogram.com/post'))
     print('---')
     for tl in others[:15]:
         if not tl["posts"]:
             continue
-        print(f'{tl["username"]}: {tl["posts"][:5]}: {tl["last_posted_at"]}')
+        posts = '  '.join(tl["posts"][:10])
+        print(f'@{tl["username"]}: {tl["last_posted_at"]}')
+        print(f'{posts}')
+        print('---')
 
 except Exception as e:
     print('!pcogram | color=red')
