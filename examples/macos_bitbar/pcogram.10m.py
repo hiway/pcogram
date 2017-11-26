@@ -36,7 +36,8 @@ try:
         if not tl["posts"]:
             continue
         posts = '  '.join(tl["posts"][:10])
-        print(f'@{tl["username"]}: {tl["last_posted_at"]}')
+        print(f'@{tl["username"]}| href=https://pcogram.com/{tl["username"]}')
+        print(f'{tl["last_posted_at"]}')
         print(f'{posts}')
         print('---')
 
